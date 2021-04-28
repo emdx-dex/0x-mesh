@@ -119,6 +119,36 @@ func NewContractAddressesForChainID(chainID int) (ContractAddresses, error) {
 			ChaiToken:           common.HexToAddress("0x0000000000000000000000000000000000000000"),
 			MaximumGasPrice:     common.HexToAddress("0x67a094cf028221ffdd93fc658f963151d05e2a74"),
 		}, nil
+	case 30:
+		return ContractAddresses{
+			ERC20Proxy:          common.HexToAddress("0x0000000000000000000000000000000000000000"),
+			ERC721Proxy:         common.HexToAddress("0x0000000000000000000000000000000000000000"),
+			Exchange:            common.HexToAddress("0x0000000000000000000000000000000000000000"),
+			ERC1155Proxy:        common.HexToAddress("0x0000000000000000000000000000000000000000"),
+			Coordinator:         common.HexToAddress("0x0000000000000000000000000000000000000000"),
+			CoordinatorRegistry: common.HexToAddress("0x0000000000000000000000000000000000000000"),
+			DevUtils:            common.HexToAddress("0x0000000000000000000000000000000000000000"),
+			WETH9:               common.HexToAddress("0x967f8799af07df1534d48a95a5c9febe92c53ae0"),
+			ZRXToken:            common.HexToAddress("0x0000000000000000000000000000000000000000"),
+			ChaiBridge:          common.HexToAddress("0x0000000000000000000000000000000000000000"),
+			ChaiToken:           common.HexToAddress("0x0000000000000000000000000000000000000000"),
+			MaximumGasPrice:     common.HexToAddress("0x0000000000000000000000000000000000000000"),
+		}, nil
+	case 31:
+		return ContractAddresses{
+			ERC20Proxy:          common.HexToAddress("0x2fafec0b05b7bec58b34b3d4c551f377a5b1481f"),
+			ERC721Proxy:         common.HexToAddress("0xade3c02a2659882b884b7cde7ff4d18d8ffb0098"),
+			Exchange:            common.HexToAddress("0x9c0c6e2ec1d0d891e6b078a9fadbf2a5b7b42544"),
+			ERC1155Proxy:        common.HexToAddress("0xb4dfaf0893c053f2dac669baea4f9957876b52c4"),
+			Coordinator:         common.HexToAddress("0x518b3e081a411c02f2c3a75cb5a09a112f8e25c3"),
+			CoordinatorRegistry: common.HexToAddress("0xc503845e8387fab408b11f792c7df51c9aba6f69"),
+			DevUtils:            common.HexToAddress("0x587988341c5b5579598136f8d2d409f2c9eb3dfd"),
+			WETH9:               common.HexToAddress("0x09b6ca5e4496238a1f176aea6bb607db96c2286e"),
+			ZRXToken:            common.HexToAddress("0xbce865d6886302aca275b09a6043552d6b0a9bbb"),
+			ChaiBridge:          common.HexToAddress("0x0000000000000000000000000000000000000000"),
+			ChaiToken:           common.HexToAddress("0x0000000000000000000000000000000000000000"),
+			MaximumGasPrice:     common.HexToAddress("0x67a094cf028221ffdd93fc658f963151d05e2a74"),
+		}, nil
 	case 1337:
 		return ganacheAddresses(), nil
 	default:
