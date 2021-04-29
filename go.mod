@@ -32,7 +32,6 @@ require (
 	github.com/gibson042/canonicaljson-go v1.0.3
 	github.com/google/uuid v1.1.1
 	github.com/gorilla/websocket v1.4.2 // indirect
-	github.com/hashicorp/go-multierror v1.1.0 // indirect
 	github.com/hashicorp/golang-lru v0.5.4
 	github.com/ido50/sqlz v0.0.0-20200308174337-487b8faf612c
 	github.com/ipfs/go-datastore v0.4.5
@@ -52,7 +51,6 @@ require (
 	github.com/libp2p/go-libp2p-core v0.6.1
 	github.com/libp2p/go-libp2p-discovery v0.5.0
 	github.com/libp2p/go-libp2p-kad-dht v0.10.0
-	github.com/libp2p/go-libp2p-peer v0.2.0 // indirect
 	github.com/libp2p/go-libp2p-peerstore v0.2.6
 	github.com/libp2p/go-libp2p-pubsub v0.3.3
 	github.com/libp2p/go-libp2p-pubsub-router v0.3.1 // indirect
@@ -71,7 +69,6 @@ require (
 	github.com/multiformats/go-multiaddr v0.3.1
 	github.com/multiformats/go-multiaddr-dns v0.2.0
 	github.com/pborman/uuid v0.0.0-20180906182336-adf5a7427709
-	github.com/pkg/errors v0.9.1 // indirect
 	github.com/plaid/go-envvar v1.1.0
 	github.com/prometheus/tsdb v0.10.0 // indirect
 	github.com/rjeczalik/notify v0.9.2 // indirect
@@ -90,7 +87,6 @@ require (
 	golang.org/x/net v0.0.0-20200625001655-4c5254603344 // indirect
 	golang.org/x/sync v0.0.0-20200625203802-6e8e738ad208
 	golang.org/x/time v0.0.0-20191024005414-555d28b269f0
-	golang.org/x/xerrors v0.0.0-20191204190536-9bdfabe68543 // indirect
 	gopkg.in/DATA-DOG/go-sqlmock.v1 v1.3.0 // indirect
 	gopkg.in/karlseguin/expect.v1 v1.0.1 // indirect
 	gopkg.in/yaml.v2 v2.3.0 // indirect

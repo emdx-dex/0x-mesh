@@ -401,7 +401,9 @@ func (w *Watcher) addLogs(header *types.MiniHeader) (*types.MiniHeader, error) {
 		return header, nil
 	}
 	logs, err := w.client.FilterLogs(ethereum.FilterQuery{
-		BlockHash: &header.Hash,
+		//BlockHash: &header.Hash,
+		FromBlock: header.Number, //puede ser tmb &header.Number porque pide puntero en el struct de filterQuery pero me bardea el linter no estoy seguro del tipo / same abajo
+		ToBlock:   header.Number,
 		Topics:    [][]common.Hash{w.topics},
 	})
 	if err != nil {
