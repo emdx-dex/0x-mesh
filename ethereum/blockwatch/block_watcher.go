@@ -399,7 +399,9 @@ func (w *Watcher) addLogs(header *miniheader.MiniHeader) (*miniheader.MiniHeader
 		return header, nil
 	}
 	logs, err := w.client.FilterLogs(ethereum.FilterQuery{
-		BlockHash: &header.Hash,
+		//BlockHash: &header.Hash,
+		FromBlock: header.Number,
+		ToBlock:   header.Number, //big.NewInt(int64(to)),
 		Topics:    [][]common.Hash{w.topics},
 	})
 	if err != nil {
